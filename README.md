@@ -1,26 +1,19 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop.
+# 📱 App de Exercícios - Kotlin Multiplatform
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-    - `commonMain` is for code that’s common for all targets.
-    - Other folders are for Kotlin code that will be compiled for only the platform indicated in the
-      folder name.
-      For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-      `iosMain` would be the right folder for such calls.
+Este projeto é um aplicativo de exercícios desenvolvido em Kotlin Multiplatform (KMP) com **Compose Multiplatform** para a interface. O backend é feito em Spring Boot, garantindo consumo de API assíncrona e uma navegação fluida com uma interface intuitiva.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for
-  your project.
+## 🚀 Tecnologias Utilizadas
 
-Learn more
-about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+- **Kotlin Multiplatform** - Compartilhamento de código entre plataformas.
+- **Compose Multiplatform** - Interface moderna e responsiva em múltiplas plataformas.
+- **Coroutines e StateFlow/SharedFlow** - Manipulação assíncrona e reativa de dados.
+- **Ktor** - Cliente HTTP para consumo de APIs assíncronas de forma eficiente.
+- **Coil** - Carregamento rápido e leve de imagens no Compose.
+- **Room** - Persistência de dados local com banco de dados SQLite.
+- **MVI (Model-View-Intent)** - Arquitetura unidirecional para gerenciamento de estado e UI reativa.
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack
-channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them
-on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+## 📄 Licença
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle
-task.
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
